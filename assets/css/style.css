@@ -496,6 +496,7 @@ html{
     .movie-body{
         font-size: 1.1vw;
         background-color: white;
+        color:black;
     }
 
     .movie-heading{
@@ -530,6 +531,7 @@ html{
     .movie-body{
         font-size: 1.1vw;
         background-color: white;
+        color: black;
     }
 
     .movie-heading{
@@ -564,6 +566,7 @@ html{
     .movie-body{
         font-size: 2vh;
         background-color: white;
+        color: black;
     }
 
     .movie-heading{
