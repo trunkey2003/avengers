@@ -443,6 +443,7 @@ html{
     padding:1vw 1vh;
     border-bottom:0.1vh solid #ccc;
     list-style-type:none;
+    color: black;
 
 }
 .ticket-list .sold-out{
