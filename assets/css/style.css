@@ -1,0 +1,648 @@
+/* reset css */
+
+/* 
+PC >= 1024px
+Tablet >= 740px & <1024px
+Mobile <740px
+*/
+
+/* MEDIA QUERIES */
+/* BEGIN */
+/* PC */
+@media  (min-width:1024px){
+
+}
+
+/* TABLET */
+@media  (min-width:740px) and (max-width:1023.9px){
+
+}
+
+/* MOBILE */
+@media (max-width:739.9px){
+
+}
+/* END */
+/* MEDIA QUERIES */
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.text-white{
+    color:#fff !important;
+}
+
+html{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(88, 13, 13);
+}
+
+/* MEDIA QUERIES */
+/* BEGIN */
+/* PC */
+@media (min-width:1024px){
+    #header{
+        height:6vh;
+        width: 100vw;
+        background-color: rgb(10,10,10);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1;
+    }
+    
+    #nav{
+        display:inline-block;
+    }
+    
+    
+    #nav li{
+        display :block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+    }
+    #nav>li{
+        display: inline-block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 12px;
+        position: relative;
+    }
+    
+    #nav>li>a{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li a{
+        text-decoration: none;
+        line-height: 6vh;
+        padding: 0 1.1vw;
+        display:block;
+    }
+    
+    #nav .subnav a{
+        color :#202020;
+        font-size: 2vh;
+        width: 5vw;
+    }
+    
+    .nav-arrow-down{
+        font-size: 1vh;
+        margin-left: 1vw;
+    }
+    #nav li:hover .subnav{
+        display:block;
+    }
+    #slider{
+        margin-top: 6vh;
+        padding-top: 50%;
+        position: relative;
+        background: url('/assets/img/avenger.png') top center / cover no-repeat;
+        background-size: cover;
+    }
+    #slider .text-content{
+    position: absolute;
+    bottom:10%;
+    left:50%;
+    color:white;
+    font-weight: 500;
+    transform: translateX(-50%);
+    text-align: center;
+    line-height: 20px;
+    font-size: 13px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .logo img{
+        height: 4vw;
+    }
+    #nav .subnav{
+        display : none;
+        position: absolute;
+        top:100%;
+        left:0;
+        background-color: white;
+        box-shadow: 0 0 2vh rgba(0,0,0,0.3);
+    }
+}
+
+/* TABLET */
+@media  (min-width:640px) and (max-width:1023.9px){
+    #header{
+        height: 7vw;
+        width: 100vw;
+        background-color: rgb(10,10,10);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1;
+    }
+    
+    #nav{
+        display:inline-block;
+    }
+    
+    
+    #nav li{
+        display :block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+    }
+    #nav>li{
+        display: inline-block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 12px;
+        position: relative;
+    }
+    
+    #nav>li>a{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li a{
+        text-decoration: none;
+        line-height: 7vw;
+        padding: 0 1.1vw;
+        display:block;
+    }
+    
+    #nav .subnav a{
+        color :#202020;
+        font-size: 2vh;
+    }
+    
+    .nav-arrow-down{
+        font-size: 1vh;
+        margin-left: 1vw;
+    }
+    #nav li:hover .subnav{
+        display:block;
+    }
+    #slider{
+        margin-top: 7vw;
+        padding-top: 50%;
+        position: relative;
+        background: url('/assets/img/avenger.png') top center / cover no-repeat;
+        background-size: cover;
+    }
+    #slider .text-content{
+        position: absolute;
+        bottom:10%;
+        left:30%;
+        color:white;
+        font-weight: 500;
+        transform: translateX(-20%);
+        text-align: center;
+        line-height: 15px;
+        font-size: 12px;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .logo img{
+        height: 8vw;
+    }
+    #nav .subnav{
+        display : none;
+        position: absolute;
+        top:100%;
+        left:0;
+        background-color: white;
+        box-shadow: 0 0 2vh rgba(0,0,0,0.3);
+    }
+}
+
+/* MOBILE */
+@media (max-width:639.9px){
+    #header{
+        height: 8vw;
+        width: 100vw;
+        background-color: rgb(10,10,10);
+        position: fixed;
+        top:0;
+        left:0;
+        right:0;
+        z-index: 1;
+    }
+    
+    #nav{
+        display:inline-block;
+    }
+    
+    
+    #nav li{
+        display :block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        position: relative;
+    }
+    #nav>li{
+        display: inline-block;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-size: 3vw;
+        position: relative;
+    }
+    
+    #nav>li>a{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li a{
+        text-decoration: none;
+        line-height: 8vw;
+        padding: 0 1.1vw;
+        display:block;
+    }
+    
+    #nav .subnav a{
+        color :#202020;
+        font-size: 2vh;
+    }
+    
+    .nav-arrow-down{
+        font-size: 1vh;
+        margin-left: 1vw;
+    }
+
+    #slider{
+        margin-top: 8vw;
+        padding-top: 50%;
+        position: relative;
+        background: url('/assets/img/avenger.png') top center / cover no-repeat;
+        background-size: cover;
+    }
+    #slider .text-content{
+    position: absolute;
+    bottom:10%;
+    left:30%;
+    color:white;
+    font-weight: 500;
+    transform: translateX(-20%);
+    text-align: center;
+    line-height: 10px;
+    font-size: 8px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .logo img{
+        height: 8vw;
+    }
+    #nav .subnav{
+        display : none;
+        position: absolute;
+        top:100%;
+        left:0;
+        background-color: white;
+        box-shadow: 0 0 2vh rgba(0,0,0,0.3);
+    }
+}
+/* END */
+/* MEDIA QUERIES */
+
+
+#nav .subnav li:hover a,
+#nav>li:hover>a{
+    color: white;
+    background-color: rgb(212, 18, 18);
+}
+.logo{
+    float:right;
+    display: block;
+    margin-right: 2vw;
+}
+
+.logo:hover{
+    cursor: pointer;
+}
+/* .search-icon{ 
+    color: white;
+    font-size: 2vh;
+}*/
+
+
+#content .content-section{
+    width: 70vw;
+    padding :5.5vh 0px;
+    display: flow-root;
+    margin-left: auto;
+    margin-right:auto;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#content .section-heading{
+    font-size: 4.0vh;
+    text-align: center;
+    letter-spacing: 1vh;
+    margin :3vh 0 3vh 0;
+}
+
+@media  (min-width:1024px){
+    #content .member-item{
+        margin-top: 10vh;
+        display: inline-block;
+        margin:1vh 1vw;
+        width: 30vw;
+    }
+    #content .member-item img{
+        border-radius: 50%;
+        display:block;
+        margin-left: 25%;
+        width: 50%;
+        /* border: 2px solid #ccc; */
+    }
+    #content .content-section .member-name{
+        margin:0 0 2vh 0;
+        text-align: center;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }    
+}
+
+/* TABLET */
+@media  (min-width:550px) and (max-width:1023.9px){ 
+    #content .member-item{
+        margin-top: 10vh;
+        display: inline-block;
+        margin:1vh 1vw;
+        width: 100%;
+        font-size: 5vh;
+    }
+    #content .member-item img{
+        border-radius: 50%;
+        display:block;
+        margin-left: 25%;
+        width: 50%;
+        border: 2px solid #ccc;
+    }
+    #content .content-section .member-name{
+        margin:0 0 2vh 0;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }    
+}
+
+/* MOBILE */
+@media (max-width:549.9px){
+    #content .member-item{
+        margin-top: 10vh;
+        display: inline-block;
+        width: 100%;
+        font-size: 4vh;
+    }
+    #content .member-item img{
+        border-radius: 50%;
+        display:block;
+        width: 100%;
+        border: 2px solid #ccc;
+    }
+    #content .content-section .member-name{
+        margin:0 0 2vh 0;
+        text-align: center;
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }    
+}
+/* END */
+/* MEDIA QUERIES */
+
+#content .section-sub-heading{
+    font-size: 2.2vh ;
+    margin: 2vh 0 2vh 0;
+    text-align: center;
+    color: #202020;
+    font-style: italic;
+}
+
+.members-list{
+    margin-top: 5vh;
+}
+
+#content .member-item img:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.tour-section{
+    background-color: #000;
+}
+
+#content .about-text{
+    color: #202020;
+    line-height: 4vh;
+    text-align: center;
+    font-size: 2.5vh;
+}    
+
+.ticket-list{
+    background-color: #fff;
+    margin-top: 2vh;
+    cursor: pointer;
+}
+
+.ticket-list li:hover{
+    background-color: rgb(112, 30, 30);
+
+}
+.ticket-list li{
+    font-size: 2.2vh;
+    padding:1vw 1vh;
+    border-bottom:0.1vh solid #ccc;
+    list-style-type:none;
+
+}
+.ticket-list .sold-out{
+    background-color: rgb(212, 18, 18);
+    color: white;
+    font-size: 1.5vh;
+}
+
+.ticket-list .quantity{
+    float: right;
+    background-color: rgb(119, 21, 21);
+    color: white;
+    font-size: 13px;
+}
+.movie-list{
+    margin-top: 10vh;
+}
+
+.movie-item:hover{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+/* MEDIA QUERIES */
+/* BEGIN */
+/* PC */
+@media  (min-width:1024px) {
+    .movie-item{
+        width: 30%;
+        margin-left: calc(10%/6);
+        margin-right: calc(10%/6);
+        margin-top: 5%;
+        float: left;
+        /* background-color: #fff; */
+        overflow :hidden;
+    }
+
+    .movie-buy-btn{
+        color: #fff;
+        display: inline-block;
+        margin-top: 1.5vw;
+        padding: 0.5vw 0; 
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: rgb(212, 18, 18);
+    }
+
+    .movie-body{
+        font-size: 1.1vw;
+        background-color: white;
+    }
+
+    .movie-heading{
+        min-height: 3.3vw;
+    }
+}
+
+/* TABLET */
+@media  (min-width:550px) and (max-width:1023.9px){
+    .movie-item{
+        width: 30%;
+        margin-left: calc(10%/6);
+        margin-right: calc(10%/6);
+        margin-top: 5%;
+        float: left;
+        /* background-color: #fff; */
+        overflow :hidden;
+    }
+
+    .movie-buy-btn{
+        color: #fff;
+        display: inline-block;
+        margin-top: 1.5vw;
+        padding: 0.5vw 0; 
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: rgb(212, 18, 18);
+    }
+
+    .movie-body{
+        font-size: 1.1vw;
+        background-color: white;
+    }
+
+    .movie-heading{
+        min-height: 3.3vw;
+    }
+}
+
+/* MOBILE */
+@media  (max-width:549.9px){
+    .movie-item{
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        margin-top: 5%;
+        float: left;
+        /* background-color: #fff; */
+        overflow :hidden;
+    }
+
+    .movie-buy-btn{
+        color: #fff;
+        display: inline-block;
+        margin-top: 2vh;
+        padding: 1vh 0; 
+        width: 100%;
+        text-align: center;
+        font-weight: 600;
+        text-decoration: none;
+        background-color: rgb(212, 18, 18);
+    }
+
+    .movie-body{
+        font-size: 2vh;
+        background-color: white;
+    }
+
+    .movie-heading{
+        min-height: 3vh;
+    }
+}
+
+/* END */
+/* MEDIA QUERIES */
+
+.movie-item img{
+ display: block;
+ width: 100%;
+ ;
+ background-color: black;       
+ margin:auto;
+}
+
+.form-section input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+  
+#country option :hover{
+    background-color: black;
+}
+
+#submit {
+    background-color: white;
+    color: black;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#submit:hover{
+    background-color: black;
+}
+
+#footer{
+    display: block;
+    width: 100%;
+    height: AUTO    ;
+    background-color: #000;
+    color: white; 
+}
+
+#content-footer{
+    width: 90%;
+    font-size: 13px;
+    background-attachment:#000;
+    display: flow-root;
+    margin-left: auto;
+    margin-right: auto;
+    padding : 3vh 0 0 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#content-footer #left-content{
+    float: left;
+}
+
+#content-footer #right-content{
+    float: right;
+}
+#facebook-name{
+    text-decoration: none;
+    color:#fff;
+}
+
+#content-footer #right-content a{
+    text-decoration: none;
+    font-size: 2.2vh;
+}
