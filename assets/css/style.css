@@ -406,7 +406,6 @@ html{
     font-size: 2.2vh ;
     margin: 2vh 0 2vh 0;
     text-align: center;
-    color: #202020;
     font-style: italic;
 }
 
@@ -424,7 +423,6 @@ html{
 }
 
 #content .about-text{
-    color: #202020;
     line-height: 4vh;
     text-align: center;
     font-size: 2.5vh;
