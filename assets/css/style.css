@@ -436,7 +436,7 @@ html{
 
 .ticket-list li:hover{
     background-color: rgb(112, 30, 30);
-
+    color: white;
 }
 .ticket-list li{
     font-size: 2.2vh;
