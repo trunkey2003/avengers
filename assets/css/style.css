@@ -82,20 +82,28 @@ html{
         padding: 0 1.1vw;
         display:block;
     }
+    #nav>li>p{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li p{
+        text-decoration: none;
+        line-height: 6vh;
+        padding: 0 1.1vw;
+        display:block;
+    }
     
-    #nav .subnav a{
+    #nav #sub-nav a{
         color :#202020;
         font-size: 2vh;
         width: 5vw;
     }
     
-    .nav-arrow-down{
-        font-size: 1vh;
+    #arrow-down{
+        font-size: 2vh;
         margin-left: 1vw;
     }
-    #nav li:hover .subnav{
-        display:block;
-    }
+    
     #slider{
         margin-top: 6vh;
         padding-top: 50%;
@@ -115,17 +123,20 @@ html{
     font-size: 13px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .logo img{
+    #logo img{
         height: 4vw;
     }
-    #nav .subnav{
+    #sub-nav{
         display : none;
         position: absolute;
-        top:100%;
+        top:98%;
         left:0;
         background-color: white;
         box-shadow: 0 0 2vh rgba(0,0,0,0.3);
     }
+    /* #sub-nav{
+        display: block;
+    } */
 }
 
 /* TABLET */
@@ -165,21 +176,39 @@ html{
     #nav li a{
         text-decoration: none;
         line-height: 7vw;
-        padding: 0 1.1vw;
+        padding: 0 35px;
+        display:block;
+        font-size: 2vw;
+    }
+    /* NEED PREVENTING ANCHOR */
+    #nav>li>p{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li p{
+        text-decoration: none;
+        line-height: 7vw;
+        padding: 0 35px;
+        display:block;
+        font-size: 2vw;
+    }
+     /* NEED PREVENTING ANCHOR */
+    
+
+    /* fix */
+    #nav li #sub-nav{
         display:block;
     }
+    /* fix */
     
-    #nav .subnav a{
+    #nav #sub-nav a{
         color :#202020;
-        font-size: 2vh;
+        font-size: 2vw;
     }
     
-    .nav-arrow-down{
-        font-size: 1vh;
+    #arrow-down{
+        font-size: 2vh;
         margin-left: 1vw;
-    }
-    #nav li:hover .subnav{
-        display:block;
     }
     #slider{
         margin-top: 7vw;
@@ -200,11 +229,11 @@ html{
         font-size: 12px;
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .logo img{
+    #logo img{
         height: 8vw;
     }
-    #nav .subnav{
-        display : none;
+    #nav #sub-nav{
+        display: block;
         position: absolute;
         top:100%;
         left:0;
@@ -252,15 +281,37 @@ html{
         line-height: 8vw;
         padding: 0 1.1vw;
         display:block;
-    }
-    
-    #nav .subnav a{
-        color :#202020;
         font-size: 2vh;
     }
+
+     /* NEED PREVENTING ANCHOR */
+     #nav>li>p{
+        color:white;
+        text-transform: uppercase;
+    }
+    #nav li p{
+        text-decoration: none;
+        line-height: 7vw;
+        padding: 0 1.1vw;
+        display:block;
+        font-size: 2vh;
+    }
+     /* NEED PREVENTING ANCHOR */
+
+    /* fix */
+    #nav li #sub-nav{
+        display:block;
+    }
+    /* fix */
+
+    #nav #sub-nav a{
+        color :#202020;
+        font-size: 2vh;
+        padding: 0 5vw;
+    }
     
-    .nav-arrow-down{
-        font-size: 1vh;
+    #arrow-down{
+        font-size: 2vh;
         margin-left: 1vw;
     }
 
@@ -283,11 +334,11 @@ html{
     font-size: 8px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     }
-    .logo img{
+    #logo img{
         height: 8vw;
     }
-    #nav .subnav{
-        display : none;
+    #nav #sub-nav{
+        display : block;
         position: absolute;
         top:100%;
         left:0;
@@ -298,19 +349,38 @@ html{
 /* END */
 /* MEDIA QUERIES */
 
+#close-sub-nav{
+    position: absolute;
+    left:-14px;
+    display :none;
+    font-size: 10px;
+    padding: 2px;
+    color: white;
+    font-weight: bold;
+}
+#close-sub-nav:hover{
+    background-color: rgb(212, 18, 18);
+}
 
-#nav .subnav li:hover a,
+
+#nav #sub-nav li:hover a,
 #nav>li:hover>a{
     color: white;
     background-color: rgb(212, 18, 18);
 }
-.logo{
+
+#nav>li:hover>p{
+    color: white;
+    background-color: rgb(212, 18, 18);
+}
+
+#logo{
     float:right;
     display: block;
     margin-right: 2vw;
 }
 
-.logo:hover{
+#logo:hover{
     cursor: pointer;
 }
 /* .search-icon{ 
@@ -458,6 +528,16 @@ html{
     color: white;
     font-size: 13px;
 }
+#get-date-area{
+    padding:1vw 0;
+}
+#date-button {
+    background-color: red;
+    border: none;
+    padding:1px 2px;
+    margin-left: 1vw;
+}
+
 .movie-list{
     margin-top: 10vh;
 }
