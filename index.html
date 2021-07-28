@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="assets/img/ICON/LOGO.png" type="image/png" sizes="20x20">
         <title>Avengers | Members, Villains, Powers, & More | Marvel</title>
         <link rel="stylesheet" href="assets/css/style.css">
         <link rel="stylesheet" href="assets/fonts/themify-icons/themify-icons.css">
@@ -10,7 +11,7 @@
         /*CAN'T LINK THE THIS IMAGE THROUGH EXTERNAL CSS SO I MUST USE INTERNAL TO REPLACE IT  */
         @media (min-width:1024px){    
         #slider{
-            margin-top: 6vh;
+            margin-top: 35px;
             padding-top: 50%;
             position: relative;
             background: url('assets/img/avenger.png') top center / cover no-repeat;
@@ -19,7 +20,7 @@
         }
         @media (min-width:640px) and (max-width:1023.9px){
         #slider{
-            margin-top: 7vw;
+            margin-top: 50px;
             padding-top: 50%;
             position: relative;
             background: url('assets/img/avenger.png') top center / cover no-repeat;
@@ -28,7 +29,7 @@
         }
         @media (max-width:639.9px){
         #slider{
-            margin-top: 8vw;
+            margin-top: 30px;
             padding-top: 50%;
             position: relative;
             background: url('assets/img/avenger.png') top center / cover no-repeat;
@@ -42,32 +43,33 @@
             <div id="header">
                 <ul id="nav">
                 <!-- BEGIN NAV -->
-                    <li><a href="#slider">Home</a></li>
+                    <li><a href="#">Home</a></li>
                     <li><a href="#origin">Origin</a></li>
                     <li><a href="#movie">Movies</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li>
                         <p href="" id="more-button">
                             More
-                            
                             <!-- <i class="ti-angle-down" id="arrow-down"></i> -->
                         </p>
-                        <ul id="sub-nav">
+                        <ul id="sub-nav" class="">
                             <li><a href="">Weapon</a></li>
                             <li><a href="">Actors</a></li>
                             <li><a href="">Credits</a></li>
                         </ul>
-                        <i class="ti-close" id="close-sub-nav"></i>
                     </li>
-                </ul>
+                </ul>       
              <!-- END NAV -->
              <!-- BEGIN SEARCH BUTTON -->
-             <div id="logo">
-                <a href="#main">
+            <div id="logo">
+                <a href="#">
                 <img src="https://i.pinimg.com/originals/d2/b6/d9/d2b6d9f420dd981e2387d7843e75feca.png" alt="PIC">
                 </a>   
             </div>
-
+                <form action="/action_page.php">
+                  <input type="text" placeholder="Search.." name="search">
+                  <button type="submit"><i class="ti-search"></i></button>
+                </form>
              <!-- END SEATCH BUTTON -->
             </div>
             <div id="slider">
@@ -127,7 +129,8 @@
                                 <li>March <span class="sold-out">SOLD OUT</li>
                                 <li>April <span class="sold-out">SOLD OUT</li>
                                 <li>May <span class="sold-out">SOLD OUT</li>
-                                <li>June <span class="quantity">99+</li>    
+                                <li>June <span class="sold-out">SOLD OUT</li>
+                                <li>July <span class="quantity">99</li>    
                                 <div id="get-date-area">
                                 <button type="button" id="date-button">
                                 GET DATE
@@ -408,15 +411,22 @@
 
                 <!-- CONTACT SECTION -->
                 <div id="contact" class="content-section">
-                    <div class="content-section">
-                        <div class="first-section">
+                        <div class="content-section">
                             <h2 class="section-heading">CONTACT</h2>
-                            <p class="section-sub-heading">FAN ? CONTACT US !!!</p>
+                            <!-- <p class="section-sub-heading">FAN ? CONTACT US !!!</p> -->
                         </div>
-                        <form class="form-section">
+                        <form name="comment" class="form-section"> 
+                         <div id="left-section">
+                            <img id="avatar" src="/assets/img/TEAM/Superhero Avatars/Avengers/Iron Man-01.png" alt="">
+                            <div id="change-btn">
+                            <i class="ti-angle-left" id="leftchangeBtn"></i>
+                            <i class="ti-angle-right" id="rightchangeBtn"></i>
+                            </div>
+                         </div>
+                         <div id="right-section">
                             <div class="name-form">
                                 <label for="fname">Name</label>
-                                <input type="text" id="fname" name="fname" movieholder="Your name...">
+                                <input type="text" id="fname" name="fname" placeholder="Your name...">
                             </div>
                             <label for="country">Country</label>
                             <select id="country" name="country">
@@ -428,11 +438,12 @@
                             </select>
                             <div class="comment-form">
                                 <label for="fname">Comment</label>
-                                <textarea id="comment" name="comment" movieholder="Write something.." style="height:200px"></textarea>
-                            </div>
-                            <button id="submit" onclick="Submit()">Submit</button>
+                                <textarea id="comment" name="comment" placeholder="Write something.." style=""></textarea>
+                            </div> 
+                          </div> 
+                          <button id="submit" onclick="Submit()">Submit</button>
                         </form>
-                    </div>
+                        
                 </div>
                 <!-- CONTACT SECTION -->
             </div>
