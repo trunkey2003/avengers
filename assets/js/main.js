@@ -71,8 +71,6 @@ const close = function(){
 
 var index = 0;
 
-
-
 leftchangeBtn.onclick=function(){
     console.log('Hello left');
     if (index === 0) {index = source.length-1} else {--index};
