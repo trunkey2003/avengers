@@ -2,9 +2,9 @@ function Submit() {
     alert("Your comment has succesfully sent, we will contact you later :)");
 }
 
-const avengers = "/assets/img/TEAM/Superhero Avatars/Avengers";
+const avengers = "./assets/img/TEAM/Superhero Avatars/Avengers";
 
-const ironman ="/assets/img/TEAM/Superhero Avatars/Iron Man"
+const ironman ="./assets/img/TEAM/Superhero Avatars/Iron Man"
 
 const moreBtn = document.getElementById("more-button");
 
